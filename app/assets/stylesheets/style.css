@@ -1,6 +1,36 @@
-body {
+.container {
+    /*
     background-color: #d2b48c;
-    margin-left: 20%;
-    margin-right: 20%;
+    */
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: sans-serif;
+}
+
+.navbar {
+    margin-bottom: 18px;
+    overflow: visible;
+}
+
+.navbar_inner {
+    background-color: red;
+    border-radius: 4px 4px 4px 4px;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;
+    */
+}
+
+.content_navi {
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px;
+}
+
+.content_list {
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px;
+    width: 800px;
+    float: right;
 }
