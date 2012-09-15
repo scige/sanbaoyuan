@@ -7,8 +7,46 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="logobar">
+        <div class="logobar_inner">
+            <div class="container logobar_container">
+                <%= link_to "三宝元", { :controller => "home", :action => "index"} %>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <div class="container">
+            <p>
+            <%= link_to "首页", { :controller => "home", :action => "index"} %>
+            <%= link_to "企业介绍" %>
+            <%= link_to "新闻介绍" %>
+            <%= link_to "产品介绍" %>
+            <%= link_to "合作伙伴" %>
+            <%= link_to "联系我们", { :controller => "contact", :action => "index"} %>
+            </p>
+            
+            <p> <%= image_tag "/images/logo2.png" %> </p>
+        </div>
+    </div>
 
-<%= yield %>
+    <div class="real_content">
+        <div class="container">
 
+            <%= yield %>
+
+        </div>
+    </div>
+        
+    <div class="footer">
+        <div class="container">
+            <hr/>
+            <p align="center">中国吉林省吉林市欢喜新林路9号 三宝元保健酒厂</p>
+            <p align="center">
+            Copyright © 2012 Sanbaoyuan
+            <script src="http://s22.cnzz.com/stat.php?id=4542871&web_id=4542871&show=pic" language="JavaScript"></script>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
