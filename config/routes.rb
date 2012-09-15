@@ -1,4 +1,6 @@
 Sanbaoyuan::Application.routes.draw do
+  resources :newsposts
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

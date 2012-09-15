@@ -9,7 +9,7 @@
 }
 
 .logobar_container {
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -36,6 +36,11 @@
     border-style: solid;
     padding: 25px;
     margin: 0px 770px 0px 0px;
+}
+
+.content_title {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .footer {

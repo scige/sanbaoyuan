@@ -1,0 +1,29 @@
+<div class="content_position">
+    <p>您现在的位置：<%= link_to "首页" %> > <%= link_to "新闻中心" %> </p>
+</div>
+
+<div class="content_list">
+    <div class="content_title">
+        <p>新闻中心</p>
+    </div>
+    
+    <table>
+    <% @newsposts.each do |newspost| %>
+      <tr>
+        <td><%= newspost.title %></td>
+        <td><%= newspost.content %></td>
+        <td><%= link_to 'Show', newspost %></td>
+        <td><%= link_to 'Edit', edit_newspost_path(newspost) %></td>
+        <td><%= link_to 'Destroy', newspost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </table>
+    
+    <br />
+    
+</div>
+
+<div class="content_navi">
+    <%= link_to '发布新闻', new_newspost_path %>
+</div>
+
