@@ -15,16 +15,26 @@
         </div>
     </div>
     
-    <div class="navigation">
+    <div class="navibar">
         <div class="container">
-            <p>
-            <%= link_to "首页", { :controller => "home", :action => "index"} %>
-            <%= link_to "企业概况" %>
-            <%= link_to "新闻中心", { :controller => "newsposts", :action => "index"} %>
-            <%= link_to "产品介绍" %>
-            <%= link_to "合作伙伴" %>
-            <%= link_to "联系方式", { :controller => "contact", :action => "index"} %>
-            </p>
+            <span class="navibar_container">
+                <%= link_to "首页", { :controller => "home", :action => "index"} %>
+            </span>
+            <span class="navibar_container">
+                <%= link_to "企业概况" %>
+            </span>
+            <span class="navibar_container">
+                <%= link_to "新闻中心", { :controller => "newsposts", :action => "index"} %>
+            </span>
+            <span class="navibar_container">
+                <%= link_to "产品介绍" %>
+            </span>
+            <span class="navibar_container">
+                <%= link_to "合作伙伴" %>
+            </span>
+            <span class="navibar_container">
+                <%= link_to "联系方式", { :controller => "contact", :action => "index"} %>
+            </span>
             
             <p> <%= image_tag "/images/logo2.png" %> </p>
         </div>
