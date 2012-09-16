@@ -12,9 +12,9 @@
       <tr>
         <td><%= newspost.title %></td>
         <td><%= newspost.content %></td>
-        <td><%= link_to 'Show', newspost %></td>
-        <td><%= link_to 'Edit', edit_newspost_path(newspost) %></td>
-        <td><%= link_to 'Destroy', newspost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '阅读', newspost %></td>
+        <td><%= link_to '编辑', edit_newspost_path(newspost) %></td>
+        <td><%= link_to '删除', newspost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
     </table>

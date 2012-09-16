@@ -36,7 +36,7 @@ a {
     border-style: solid;
     padding: 25px;
     margin: 0px 0px 0px 0px;
-    width: 700px;
+    width: 670px;
     float: right;
 }
 
@@ -44,7 +44,7 @@ a {
     border-width: 1px;
     border-style: solid;
     padding: 25px;
-    margin: 0px 770px 0px 0px;
+    margin: 0px 730px 0px 0px;
 }
 
 .content_title {
@@ -55,5 +55,7 @@ a {
 .footer {
     clear: both;
     padding: 10px;
+    margin-top: 10%;
+    border-top: 1px solid;
 }
 
